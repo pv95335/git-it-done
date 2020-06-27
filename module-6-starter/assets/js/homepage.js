@@ -12,7 +12,7 @@ var getUserRepos = function(user) {
         //request was successful
         if (response.ok) {
         response.json().then(function(data) {
-            displayRepos(data,user);
+            displayRepos(data,user); 
         });
         } else {
             alert("Error: " + response.statusText);
